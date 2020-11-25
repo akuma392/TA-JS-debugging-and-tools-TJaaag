@@ -6,7 +6,7 @@ let result = fullName("Abhi", "Kum");
 let expected = "Abhis Kum";
 
 if (result !== expected) {
-  console.error(`${expected} didnt match with ${result}`);
+  throw new Error(`${expected} didnt match with ${result}`);
 }
 
 let result1 = fullName("John", "Snow");
@@ -25,6 +25,13 @@ let res = totalAmount(2000, 2);
 
 let exp = 6005;
 
-if (res !== exp) {
-  console.error(`${exp} didnt match with ${res}`);
+if (result !== expected) {
+  throw new Error(`${exp} didnt match with ${res}`);
+}
+
+let res1 = totalAmount(2000, 2);
+
+let exp1 = 6000;
+if (result !== expected) {
+  throw new Error(`${exp1} didnt match with ${res1}`);
 }
